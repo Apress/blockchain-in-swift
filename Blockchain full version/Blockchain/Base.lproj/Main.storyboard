@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="scv-Mq-t7W">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BTC Account-->
+        <scene sceneID="5tT-MN-JTd">
+            <objects>
+                <viewController id="N0S-yR-LmE" customClass="ViewController" customModule="Blockchain" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="39z-GQ-Mqm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XF-CL-lbD">
+                                <rect key="frame" x="16" y="96" width="343" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.9399142861366272" green="0.13421812653541565" blue="0.038305472582578659" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grL-iZ-8fZ">
+                                <rect key="frame" x="16" y="559.66666666666663" width="343" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.23529411759999999" green="0.58823529409999997" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account: 1010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHi-D1-dOx">
+                                <rect key="frame" x="16.000000000000007" y="136" width="106.66666666666669" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account: 1011" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4k-M0-3Zf">
+                                <rect key="frame" x="16.000000000000007" y="599.66666666666663" width="103.66666666666669" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance: 4000 BTC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vp-hF-eo8">
+                                <rect key="frame" x="212.66666666666663" y="136" width="146.33333333333337" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance: 0 BTC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvq-Fr-Vll">
+                                <rect key="frame" x="243.66666666666666" y="599.66666666666663" width="115.33333333333334" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tmK-6h-dEr">
+                                <rect key="frame" x="82" y="172.33333333333334" width="211" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coins to send" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="by6-b8-Vto">
+                                        <rect key="frame" x="0.0" y="0.0" width="211" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="211" id="Xtn-cM-Xrn"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nx9-SW-Yd9">
+                                <rect key="frame" x="82" y="636" width="211" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coins to send" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QLD-vA-Xzt">
+                                        <rect key="frame" x="0.0" y="0.0" width="211" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="211" id="3dc-l0-5PC"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="UKa-Me-Zf7">
+                                <rect key="frame" x="87" y="218.33333333333337" width="201" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1d-d7-WUj" customClass="CircleButton" customModule="Blockchain" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.9399142861366272" green="0.13421812653541565" blue="0.038305472582578659" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="0CO-nN-QF3"/>
+                                            <constraint firstAttribute="height" constant="80" id="TO9-lp-5Wu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Mine">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="redMine:" destination="N0S-yR-LmE" eventType="touchUpInside" id="hwA-ud-ReF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eg-S6-vuV" customClass="CircleButton" customModule="Blockchain">
+                                        <rect key="frame" x="121" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.9399142861366272" green="0.13421812653541565" blue="0.038305472582578659" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Kc6-oM-9ym"/>
+                                            <constraint firstAttribute="width" constant="80" id="uuS-eF-8in"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Send">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="redSend:" destination="N0S-yR-LmE" eventType="touchUpInside" id="HUK-lz-qZ6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="Jhm-dA-FsI">
+                                <rect key="frame" x="87" y="682" width="201" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBQ-UN-1rn" customClass="CircleButton" customModule="Blockchain">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.23529411759999999" green="0.58823529409999997" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="AG2-hv-4kj"/>
+                                            <constraint firstAttribute="width" constant="80" id="LVg-5o-pxA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Mine">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="greenMine:" destination="N0S-yR-LmE" eventType="touchUpInside" id="9JG-qL-cxH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqs-Fg-Rff" customClass="CircleButton" customModule="Blockchain">
+                                        <rect key="frame" x="121" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.23529411759999999" green="0.58823529409999997" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="CM2-T2-t3c"/>
+                                            <constraint firstAttribute="width" constant="80" id="LYj-oN-qlr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Send">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="greenSend:" destination="N0S-yR-LmE" eventType="touchUpInside" id="Evk-Ii-7zv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jhm-dA-FsI" firstAttribute="centerX" secondItem="39z-GQ-Mqm" secondAttribute="centerX" id="5VB-Tu-iHa"/>
+                            <constraint firstItem="1vp-hF-eo8" firstAttribute="top" secondItem="7XF-CL-lbD" secondAttribute="bottom" constant="4" id="6OB-lO-Yie"/>
+                            <constraint firstItem="grL-iZ-8fZ" firstAttribute="leading" secondItem="QUR-qy-9df" secondAttribute="leading" constant="16" id="8X2-n6-Ok8"/>
+                            <constraint firstItem="QUR-qy-9df" firstAttribute="trailing" secondItem="7XF-CL-lbD" secondAttribute="trailing" constant="16" id="AXR-lf-F5g"/>
+                            <constraint firstItem="H4k-M0-3Zf" firstAttribute="leading" secondItem="QUR-qy-9df" secondAttribute="leading" constant="16" id="Djd-dp-KfZ"/>
+                            <constraint firstItem="tmK-6h-dEr" firstAttribute="top" secondItem="aHi-D1-dOx" secondAttribute="bottom" constant="16" id="FV3-BT-eUY"/>
+                            <constraint firstItem="nx9-SW-Yd9" firstAttribute="top" secondItem="kvq-Fr-Vll" secondAttribute="bottom" constant="16" id="HRU-0o-Phq"/>
+                            <constraint firstItem="QUR-qy-9df" firstAttribute="trailing" secondItem="kvq-Fr-Vll" secondAttribute="trailing" constant="16" id="Kol-So-y7R"/>
+                            <constraint firstItem="H4k-M0-3Zf" firstAttribute="top" secondItem="grL-iZ-8fZ" secondAttribute="bottom" constant="4" id="MYj-bR-HZL"/>
+                            <constraint firstItem="nx9-SW-Yd9" firstAttribute="top" secondItem="H4k-M0-3Zf" secondAttribute="bottom" constant="16" id="N9U-ly-yCh"/>
+                            <constraint firstItem="7XF-CL-lbD" firstAttribute="top" secondItem="QUR-qy-9df" secondAttribute="top" constant="8" id="ORf-gH-2jv"/>
+                            <constraint firstItem="QUR-qy-9df" firstAttribute="bottom" secondItem="Jhm-dA-FsI" secondAttribute="bottom" constant="16" id="QNs-9j-7Hp"/>
+                            <constraint firstItem="aHi-D1-dOx" firstAttribute="top" secondItem="7XF-CL-lbD" secondAttribute="bottom" constant="4" id="SOz-vy-jBf"/>
+                            <constraint firstItem="grL-iZ-8fZ" firstAttribute="centerX" secondItem="39z-GQ-Mqm" secondAttribute="centerX" id="U0W-co-CYs"/>
+                            <constraint firstItem="QUR-qy-9df" firstAttribute="trailing" secondItem="grL-iZ-8fZ" secondAttribute="trailing" constant="16" id="ULT-zl-UMy"/>
+                            <constraint firstItem="UKa-Me-Zf7" firstAttribute="top" secondItem="tmK-6h-dEr" secondAttribute="bottom" constant="16" id="VB6-um-ecg"/>
+                            <constraint firstItem="nx9-SW-Yd9" firstAttribute="centerX" secondItem="39z-GQ-Mqm" secondAttribute="centerX" id="VTm-1d-Uox"/>
+                            <constraint firstItem="UKa-Me-Zf7" firstAttribute="centerX" secondItem="39z-GQ-Mqm" secondAttribute="centerX" id="bkX-lG-UUX"/>
+                            <constraint firstItem="7XF-CL-lbD" firstAttribute="leading" secondItem="QUR-qy-9df" secondAttribute="leading" constant="16" id="gT7-pz-9FO"/>
+                            <constraint firstItem="aHi-D1-dOx" firstAttribute="leading" secondItem="QUR-qy-9df" secondAttribute="leading" constant="16" id="m1L-mS-fpf"/>
+                            <constraint firstItem="Jhm-dA-FsI" firstAttribute="top" secondItem="nx9-SW-Yd9" secondAttribute="bottom" constant="16" id="nQ8-gS-yVv"/>
+                            <constraint firstItem="QUR-qy-9df" firstAttribute="trailing" secondItem="1vp-hF-eo8" secondAttribute="trailing" constant="16" id="tdC-Jv-brh"/>
+                            <constraint firstItem="tmK-6h-dEr" firstAttribute="centerX" secondItem="39z-GQ-Mqm" secondAttribute="centerX" id="tfa-m7-J0L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QUR-qy-9df"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="BTC Account" id="QRp-oi-Xal"/>
+                    <connections>
+                        <outlet property="greenAmount" destination="QLD-vA-Xzt" id="e36-1r-mXt"/>
+                        <outlet property="greenLabel" destination="kvq-Fr-Vll" id="McN-xB-fSJ"/>
+                        <outlet property="redAmount" destination="by6-b8-Vto" id="hyS-cE-GKN"/>
+                        <outlet property="redLabel" destination="1vp-hF-eo8" id="JTa-zw-eB2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ur-1c-4q5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2021.5999999999999" y="132.26600985221674"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Qt-pu-9Fx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="scv-Mq-t7W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t5f-Cb-Vu2">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="N0S-yR-LmE" kind="relationship" relationship="rootViewController" id="xVb-6J-bk7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kba-Il-GSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+</document>
